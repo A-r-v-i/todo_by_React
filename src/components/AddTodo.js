@@ -20,7 +20,7 @@ export class AddTodo extends Component {
       <form style={{display: 'flex'}}  onSubmit={this.onSubmit}>
        <input type="text" name="title" style={inputStyle} placeholder="Add todos.." value={this.state.title} onChange={this.onChange}/>
 
-       <button type="submit" value="+" className="btnSubmit" style={subStyle} />
+       <button type="submit" value="+" className="btnSubmit" style={subStyle}>+</button>
       </form>
       </div>
     );
@@ -29,8 +29,11 @@ export class AddTodo extends Component {
 const inputStyle = {
   marginTop: '10px',
   marginBottom: '10px',
-  flex: '11',
+  height: '50px',
+  width: '50px',
+  flex: '9',
   padding: '5px',
+  fontSize: '24px',
   borderBottomRightRadius: '25px',
   borderTopRightRadius: '25px',
   borderTopLeftRadius: '25px',
@@ -40,10 +43,14 @@ const inputStyle = {
 const subStyle = {
   marginTop: '10px',
   marginBottom: '10px',
-  flex: '0.5',
+  flex: '1',
   padding: '5px',
-  borderRadius: '50px',
+  height: '50px',
+  width: '50px',
+  borderRadius: '25px',
   color: '#fff',
+  float: 'right',
+  fontSize: '32px',
 }
 
 //PropTypes
